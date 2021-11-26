@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emoji</title>
+  <style media="screen">
+    .emoji {
+      width: 160px;
+      height: 160px;
+      display: inline-block;
+      position: relative;
+      background: url('images/emoji 5.png');
+    }
+    .emoji-e {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('images/emoji 5.png');
+      background-position: -640px top;
+    }
+    .emoji-e2 {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('images/emoji 5.png');
+      background-position: -960px top;
+    }
+    .emoji-m {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('images/emoji 5.png');
+      background-position: -160px top;
+    }
+    .emoji-m2 {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('images/emoji 5.png');
+      background-position: -320px top;
+    }
+    .smile {
+      animation: smile 1s steps(1) alternate infinite;
+    }
+    .blink {
+      animation: blink 1s steps(1) alternate infinite;
+    }
+    .smile2 {
+      animation: smile2 1s steps(1) alternate infinite;
+    }
+    .blink2 {
+      animation: blink2 1s steps(1) alternate infinite;
+    }
+    @keyframes smile {
+      0% {background-position: -160px top;}
+      33% {background-position: -320px top;}
+      66% {background-position: -480px top;}
+    }
+    @keyframes blink {
+      0% {background-position: -640px top;}
+      33% {background-position: -800px top;}
+      66% {background-position: -960px top;}
+    }
+    @keyframes smile2 {
+      0% {background-position: -480px top;}
+      33% {background-position: -320px top;}
+      66% {background-position: -160px top;}
+    }
+    @keyframes blink2 {
+      0% {background-position: -800px top;}
+      33% {background-position: -640px top;}
+      66% {background-position: -960px top;}
+    }
+  </style>
+</head>
+<body>
+  <div class="emoji">
+    <div class="emoji-e blink"></div>
+    <div class="emoji-m smile"></div>
+  </div>
+  <div class="emoji">
+    <div class="emoji-e"></div>
+    <div class="emoji-m smile"></div>
+  </div>
+  <div class="emoji">
+    <div class="emoji-e blink"></div>
+    <div class="emoji-m"></div>
+  </div>
+  <div class="emoji">
+    <div class="emoji-e2"></div>
+    <div class="emoji-m smile"></div>
+  </div>
+  <!-- <div class="emoji">
+    <div class="emoji-e blink"></div>
+    <div class="emoji-m2"></div>
+  </div> -->
+  <div class="emoji">
+    <div class="emoji-e blink2"></div>
+    <div class="emoji-m2 smile2"></div>
+  </div>
+</body>
+</html>
